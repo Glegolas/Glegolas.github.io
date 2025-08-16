@@ -1,0 +1,215 @@
+@font-face {
+    font-family : "Mozilla Headline";
+    src : 
+        local("Mozilla Headline"),
+        url("../fonts/Mozilla_Headline/MozillaHeadline-VariableFont_wdth\,wght.ttf") format("opentype");
+}
+
+@font-face {
+    font-family : "Playwrite BEVLG";
+    src : 
+        local("Playwrite BEVLG"),
+        url("../fonts/Playwrite_BE_VLG/PlaywriteBEVLG-VariableFont_wght.ttf") format("opentype");
+}
+
+@font-face {
+    font-family : "Rock Salt";
+    src : 
+        local("Rock Salt"),
+        url("../fonts/Rock_Salt/RockSalt-Regular.ttf") format("opentype");
+}
+
+/* id */
+#main-content {
+    border-width    : 0px;
+    display         : inline-block;
+    position        : fixed;
+    width           : 65%;
+    height          : 90%;
+    top             : 5%;
+    bottom          : 50%;
+    left            : 32.5%;
+    right           : 50%;
+}
+
+/* classes */
+.embedded-icon {
+    size: 10%;
+}
+
+.flex-content-center {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.inline-block-content-center {
+    display         : inline-block;
+    text-align      : center;
+    align-items     : center;
+}
+
+.block-content-center {
+    display         : block;
+    text-align      : center;
+    align-items     : center;
+}
+
+.block-content-center {
+    display         : block;
+}
+
+.nav-left {
+    position      : absolute;
+    width         : 25%;
+    height        : 50%;
+    margin-top    : 1%;
+    padding-left  : 1%;
+    min-height    : 200px;
+}
+
+.nav-button {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: groove;
+    border-color: rgb(0, 0, 0, 255);
+    border-width: 5px;
+    min-width: 300px;
+    width   : 100%;
+    height  : 20%;
+    color   : white;
+    text-align : center;
+    text-decoration : none;
+    font-family : "Mozilla Headline";
+    font-size   : 300%;
+    transition : background-color 2s, width 1s;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
+.nav-button:hover {
+    background-color : rgba(255, 255, 255, 0.5);
+    width       : 120%;
+}
+
+/* main */
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    width   : 100%;
+    height  : 100%;
+    margin  : 0;
+    padding : 0;
+}
+
+body {
+    position : fixed;
+    background : linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent 40%);
+    background-color : darkslategrey;
+    width   : 100%;
+    height  : 100%;
+    margin  : 0;
+    padding : 0;
+    transition: ease background-color 2s;
+}
+
+/* semantic elements (HTML5 only) */
+header {
+    min-width: 500px;
+    text-decoration : none;
+    width   :  25%;
+    height  :  20%;   
+    flex    : auto 0 0;
+    margin-top : 2%;
+}
+    header h1 {
+        -webkit-text-stroke: 10px;
+        -webkit-text-stroke-color: black;
+        paint-order: stroke;
+        color   : white;
+        font-family : "Rock Salt";
+        font-size   : 250%;
+        margin : 0;
+        padding : 0;
+    }
+
+    header h1 span {
+        display: inline-flex;
+        animation: wave 5s ease-in-out infinite;
+    }
+
+    header h1 span:nth-child(1) {
+        animation-delay: 0.2s;
+    }
+
+    header h1 span:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+
+    header h1 span:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+
+    header h1 span:nth-child(4) {
+        animation-delay: 0.8s;
+    }
+
+    header h1 span:nth-child(6) {
+        animation-delay: 1s;
+    }
+
+    header h1 span:nth-child(7) {
+        animation-delay: 1.2s;
+    }
+
+    header h1 span:nth-child(8) {
+        animation-delay: 1.4s;
+    }
+
+    header h1 span:nth-child(9) {
+        animation-delay: 1.6s;
+    }
+
+    header h1 span:nth-child(10) {
+        animation-delay: 1.8s;
+    }
+
+    header h1 span:nth-child(11) {
+        animation-delay: 2s;
+    }
+
+    header p {
+        -webkit-text-stroke: 5px;
+        -webkit-text-stroke-color: black;
+        paint-order: stroke;
+        color   : white;
+        font-family : "Mozilla Headline";
+        font-size   : 100%;
+        margin : 0;
+        padding : 0;
+    }
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+}

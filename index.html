@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Me">
+        <title>Liam Meehan</title>
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <iframe class="content" id="main-content" src="pages/about.html"></iframe>
+        <script>
+            var iframe = document.getElementById("main-content")
+            var bg_src = {
+                "experience"    : "slategrey",
+                "education"     : "silver",
+                "sandhs"        : "dimgrey",
+                "about"         : "darkslategrey",
+                "references"    : "cadetblue",
+                "projects"      : "darkseagreen",
+            }
+
+            function changeIframeSource(source) {
+                document.body.style.backgroundColor = bg_src[source]
+                iframe.src = 'pages/' + source + '.html';
+            }
+        </script>
+        
+        <header class="block-content-center">
+            <h1>
+                <span>L</span>
+                <span>i</span>
+                <span>a</span>
+                <span>m</span> 
+                <span></span>
+                <span>M</span>
+                <span>e</span>
+                <span>e</span>
+                <span>h</span>
+                <span>a</span>
+                <span>n</span>
+            </h1>
+            <p>(401) 612-6641 | <a href="mailto:liammeehan52@gmail.com">liammeehan52@gmail.com</a></p>
+            <p>Cranston, Rhode Island</p>
+        </header>
+
+        <!--article>
+            This is a test!
+        </article-->
+
+        <aside class="nav-left">
+            <div class="nav-button" onclick="changeIframeSource('experience')">
+                EXPERIENCE
+            </div>
+
+            <div class="nav-button" onclick="changeIframeSource('projects')">
+                PROJECTS
+            </div>
+
+            <div class="nav-button" onclick="changeIframeSource('education')">
+                EDUCATION
+            </div>
+
+            <div class="nav-button" onclick="changeIframeSource('sandhs')">
+                SKILLS & HOBBIES
+            </div>
+
+            <div class="nav-button" onclick="changeIframeSource('references')">
+                REFERENCES
+            </div>
+
+            <div class="nav-button" onclick="changeIframeSource('about')">
+                ABOUT
+            </div>
+        </aside>
+
+    </body>
+</html>

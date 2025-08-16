@@ -1,0 +1,104 @@
+#main_background {
+    background-image: url("../images/IMG_5914.jpg");
+    background-size: 100%;
+    -webkit-mask-image: linear-gradient(black, black, black, transparent);
+    mask-image: linear-gradient(black, black, black, transparent);
+}
+
+#work_background {
+    background-image: url("../images/work_img_1.jpg");
+    background-size: 100%;
+}
+
+.title {
+  -webkit-text-stroke-width: 10px;
+  -webkit-text-stroke-color: rgba(200, 200, 200, 1);
+  paint-order: stroke fill;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color:rgba(1, 1, 1, 0.65);
+  color: #FFFFFF;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  border-style: groove;
+  border-width: 10px;
+  border-color: black;
+}
+
+nav a {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 2%;
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 1);
+  /*border-style: ridge;
+  border-color: rgba(255, 255, 255, 0.2);*/
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently*/
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.block-container {
+  width: 100vw;
+  height: 180vh;
+  flex-wrap: nowrap;
+  display: inline-block;
+  justify-content: center;
+  justify-items: center;
+}
+
+.section-row {
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+.section-segment {
+  border-style: solid;
+  min-width: 400px;
+  min-height: 400px;
+  max-width: 600px;
+  max-height: 600px;
+  padding: 20px;
+  background-color: grey;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
